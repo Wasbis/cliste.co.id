@@ -1,0 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap");
+
+#root {
+  background: #ffffff;
+  /* margin: 0 auto;
+  padding: 2rem; */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 15px;
+  width: 80vw;
+}
+
+.content {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  width: 180px;
+}
+
+.box input {
+  width: 50px;
+  outline: none;
+  border: none;
+  margin-left: 8px;
+  transition: 0.5s;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.wrapper {
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.typing-demo {
+  width: 8.4ch;
+  animation: typing 2s steps(20), blink 0.3s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 700;
+  -webkit-animation: typing 2s steps(20), blink 0.3s step-end infinite alternate;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.boujee-text {
+  --bg-size: 400%;
+  --color-one: #003478;
+  --color-two: #a2003a;
+  --color-three: #be0000;
+  background: linear-gradient(
+      -70deg,
+      var(--color-three),
+      var(--color-one),
+      var(--color-two)
+    )
+    0 0 / var(--bg-size) 300%;
+  color: transparent;
+  background-clip: text;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .boujee-text {
+    animation: move-bg 15s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
