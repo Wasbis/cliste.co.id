@@ -12,6 +12,8 @@ export default {
           "url('src/assets/images/AboutUsPage/ourmisionoverlay.png')",
         mre: "url('src/assets/images/AboutUsPage/mre.png')",
         cmrp: "url('src/assets/images/AboutUsPage/cmrpoverlay.png')",
+        bgrctgl1: "url('src/assets/background/bg-rectangle1.png')",
+        bgrctgl2: "url('src/assets/background/bg-rectangle2.png')",
       },
     },
   },

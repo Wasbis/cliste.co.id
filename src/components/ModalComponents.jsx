@@ -57,9 +57,13 @@ export default function Modal({
                   </button>
                 </div>
                 <div className="flex justify-start items-center px-12">
-                  <h1 className="text-4xl font-bold ">{data.title}</h1>
+                  <h1 className="text-4xl font-bold max-md:text-2xl">
+                    {data.title}
+                  </h1>
                 </div>
-                <p>{data.desc}</p>
+                <div className="flex justify-start mx-[48px] content">
+                  <p>{data.desc}</p>
+                </div>
               </div>
             </div>
           </div>

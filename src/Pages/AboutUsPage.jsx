@@ -36,11 +36,31 @@ function AboutUsPage() {
   const [selectedModal, setSelectedModal] = useState(0);
 
   const listKerjaan = [
-    { id: 1, title: "Software and Development", desc: "xAC" },
-    { id: 2, title: " EPC and Consultancy", desc: "asdasds" },
-    { id: 3, title: "Training and Labor Supply", desc: "xAC" },
-    { id: 4, title: "Our Vision", desc: "asdasds" },
-    { id: 5, title: "Our Mision", desc: "xAC" },
+    {
+      id: 1,
+      title: "Software and Development",
+      desc: "To become an internationally recognized firm which provides effective solutions and contribute to reliability engineering development",
+    },
+    {
+      id: 2,
+      title: " EPC and Consultancy",
+      desc: "To become an internationally recognized firm which provides effective solutions and contribute to reliability engineering development",
+    },
+    {
+      id: 3,
+      title: "Training and Labor Supply",
+      desc: "To become an internationally recognized firm which provides effective solutions and contribute to reliability engineering development",
+    },
+    {
+      id: 4,
+      title: "Our Vision",
+      desc: "To become an internationally recognized firm which provides effective solutions and contribute to reliability engineering development",
+    },
+    {
+      id: 5,
+      title: "Our Mision",
+      desc: "To become an internationally recognized firm which provides effective solutions and contribute to reliability engineering development",
+    },
     { id: 6, title: "Quality for Your Business 1", desc: "asdasds" },
     { id: 7, title: "Quality for Your Business 2", desc: "asdasds" },
     { id: 8, title: "Quality for Your Business 3", desc: "asdasds" },
@@ -408,16 +428,16 @@ function AboutUsPage() {
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <div className="card quality-card grid grid-cols-2 gap-6 max-md:grid-cols-1">
+            <div className="card quality-card grid grid-cols-2 gap-6 max-md:grid-cols-1 ">
               {/* maintenance & reliability */}
-              <CardComponents class="h-full ">
+              <CardComponents class="h-full bg-bgrctgl1 rounded-[50px]">
                 <div className="flex h-full items-center rounded-[50px] ">
                   <div className="flex px-9 h-full flex-col items-center justify-center  ">
-                    <h1 className=" text-[#003478] text-start max-md:text-4xl text-[54px] font-black leading-snug px-7">
+                    <h1 className=" text-[#fffff] text-start max-md:text-4xl text-[54px] font-black leading-snug px-7">
                       Maintenance <br /> & Reliability Asset Management
                     </h1>
                     <div className="absolute bottom-10 right-10 max-md: ">
-                      <BlackButtonComponents
+                      <WhiteButtonComponents
                         showModal={showModal}
                         setShowModal={setShowModal}
                         setSelectedModal={setSelectedModal}
@@ -429,7 +449,7 @@ function AboutUsPage() {
               </CardComponents>
 
               {/* procurement */}
-              <CardComponentsBlack class="h-full ">
+              <CardComponentsBlack class="h-full  ">
                 <div className="flex h-full items-center rounded-[50px]">
                   <div className=" flex px-9 h-full flex-col items-center justify-center">
                     <h1 className=" boujee-text text-center text-[54px] max-md:text-4xl font-bold">
@@ -465,14 +485,14 @@ function AboutUsPage() {
               </CardComponentsBlack>
 
               {/* software & training */}
-              <CardComponents class="h-full ">
+              <CardComponents class="h-full bg-bgrctgl2 rounded-[50px]">
                 <div className="flex h-full items-center rounded-[50px] ">
                   <div className="flex px-14  h-full flex-col items-center justify-center ">
-                    <h1 className=" text-[#003478] text-start text-[54px] max-md:text-4xl font-bold">
+                    <h1 className=" text-[#white] text-start text-[54px] max-md:text-4xl font-bold">
                       Software & Training
                     </h1>
                     <div className="absolute bottom-10 right-10 max-md: ">
-                      <BlackButtonComponents
+                      <WhiteButtonComponents
                         showModal={showModal}
                         setShowModal={setShowModal}
                         setSelectedModal={setSelectedModal}
