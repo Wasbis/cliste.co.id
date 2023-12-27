@@ -16,7 +16,7 @@ function BlackButtonComponents({
   return (
     <div>
       <button
-        className="inline-flex justify-center items-center bg-black w-[50px] h-[50px] rounded-full text-indigo-100 text-4xl hover:opacity-80"
+        className=" inline-flex justify-center items-center w-[50px] h-[50px] max-md:w-[40px] max-md:h-[40px] rounded-full bg-black text-indigo-100 text-4xl hover:opacity-80"
         type="button"
         onClick={() => onClickHandle()}
       >

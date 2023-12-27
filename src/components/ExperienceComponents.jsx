@@ -718,34 +718,38 @@ function ExperienceComponents() {
       setSelectedData(dataCategory1);
     } else if (selectedCategory === "category2") {
       setSelectedData(dataCategory2);
-    } else {
+    } else if (selectedCategory === "category3") {
       setSelectedData(dataCategory3);
+    } else {
+      setSelectedCategory([]);
     }
   }, [selectedCategory]);
 
   return (
-    <div>
-      <div className=" my-10 py-6 grid justify-center  bg-[rgba(240,240,240,0.82)] h-[100vh]">
+    <div className="h-[900px] max-md:h-[600px] ">
+      <div className=" my-10 py-6 grid justify-center  bg-[rgba(240,240,240,0.82)] h-full">
         <div className="">
           {/* title */}
-          <div className="grid grid-rows-2 max-md: py-8">
+          <div className="grid grid-rows-2 max-md: py-8 ">
             <h1 className="text-left text-6xl font-semibold max-md:text-3xl max-md:px-3">
               Experience
             </h1>
             <p className="text-left max-md:px-3 py-3">
               Comprehensive Asset Integrity Services
             </p>
-            <div className="flex justify-start ">
-              <div className="button ">
+
+            {/* filter button */}
+            <div className="flex justify-start max-md:justify-center max-md:w-full">
+              <div className="button max-md:flex max-md:justify-center max-md:items-center gap-4 ">
                 <button
                   className={`${
                     selectedCategory === "category1"
                       ? "bg-black text-white"
                       : "bg-white text-black"
-                  } mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-indigo-400 duration-300 w-[138px] h-[48.05px] max-md:w-[128px] max-md:h=[44px]  p-2.5 rounded-[20px] border border-black justify-center items-center gap-2 inline-flex `}
+                  } md:mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-indigo-400 duration-300 w-[138px] h-[48.05px] max-md:w-[115px] max-md:h-[38px] max-md:rounded-[12px]  p-2.5 rounded-[20px]  border border-black justify-center items-center gap-2 inline-flex  `}
                   onClick={() => setSelectedCategory("category1")}
                 >
-                  <div className="text-lg max-md:text-sm font-normal font-['Poppins']   ">
+                  <div className="text-lg max-md:text-xs font-normal font-['Poppins']   ">
                     Engineering
                   </div>
                 </button>
@@ -754,10 +758,10 @@ function ExperienceComponents() {
                     selectedCategory === "category2"
                       ? "bg-black text-white"
                       : "bg-white text-black"
-                  } mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-indigo-400 duration-300 w-[138px] h-[48.05px] p-2.5 rounded-[20px] border border-black justify-center items-center gap-2 inline-flex `}
+                  } md:mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-indigo-400 duration-300 w-[138px] h-[48.05px] max-md:w-[115px] max-md:h-[38px] max-md:rounded-[12px]  p-2.5 rounded-[20px] border border-black justify-center items-center gap-2 inline-flex  `}
                   onClick={() => setSelectedCategory("category2")}
                 >
-                  <div className=" hover:text-white text-lg font-normal font-['Poppins']">
+                  <div className="text-lg max-md:text-xs font-normal font-['Poppins']">
                     Procurrement
                   </div>
                 </button>
@@ -766,17 +770,19 @@ function ExperienceComponents() {
                     selectedCategory === "category3"
                       ? "bg-black text-white"
                       : "bg-white text-black"
-                  } mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-indigo-400 duration-300 w-[138px] h-[48.05px] p-2.5 rounded-[20px] border border-black justify-center items-center gap-2 inline-flex `}
+                  } md:mx-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-indigo-400 duration-300 w-[138px] h-[48.05px] max-md:w-[115px] max-md:h-[38px] max-md:rounded-[12px] p-2.5 rounded-[20px] border border-black justify-center items-center gap-2 inline-flex`}
                   onClick={() => setSelectedCategory("category3")}
                 >
-                  <div className="text-lg font-normal font-['Poppins']">
+                  <div className="text-lg font-normal max-md:text-xs font-['Poppins']">
                     Training
                   </div>
                 </button>
               </div>
             </div>
           </div>
-          <div className=" bg-[#F5F5F5] shadow-xl hover:shadow-2xl transition ease-in-out delay-150 hover:translate-y-1  backdrop-red overflow-y-scroll h-[600px] max-md:h-[350px] p-16">
+
+          {/* content */}
+          <div className=" bg-[#F5F5F5] shadow-xl hover:shadow-2xl transition ease-in-out delay-150 hover:translate-y-1  backdrop-red overflow-y-scroll scroll-smooth h-[600px] max-md:h-[350px] border p-5">
             {/* container content */}
             <div className="grid grid-cols-2 gap-y-5 max-md:grid-cols-1 max-md:px-5 ">
               {/* content item? */}

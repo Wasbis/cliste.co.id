@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../layouts/layout";
 import "../index.css";
 import HomeSection from "../components/HomeSection";
 import CaroouselAnimation1 from "../components/CaroouselAnimation1";

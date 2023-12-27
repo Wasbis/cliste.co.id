@@ -3,16 +3,17 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import logocri from "../assets/Images/newlogocri.png";
 import search from "../assets/icon/icons8-search-100.png";
+import { Link } from "react-scroll";
 
 const navigation = [
   { name: "Home", href: "/home", current: true },
   { name: "Services", href: "/", current: false },
-  { name: "Product", href: "/", current: false },
-  { name: "Experience", href: "/", current: false },
   { name: "About Us", href: "/aboutus", current: false },
-  { name: "Carrer", href: "/", current: false },
-  { name: "E-Learning", href: "/", current: false },
-  { name: "Paper", href: "/", current: false },
+  { name: "Experience", href: "/", current: false },
+  { name: "Our Team", href: "/ourteam", current: false },
+  // { name: "Carrer", href: "/", current: false },
+  // { name: "E-Learning", href: "/", current: false },
+  // { name: "Paper", href: "/", current: false },
 ];
 
 function classNames(...classes) {
@@ -21,7 +22,7 @@ function classNames(...classes) {
 
 export default function GlobalNavbarComponent() {
   return (
-    <Disclosure as="nav" className="bg-[#003478e4]">
+    <Disclosure as="nav" className="bg-[#003478e4] sticky top-0 w-full z-[999]">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
@@ -50,26 +51,23 @@ export default function GlobalNavbarComponent() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
+                        to={item.name}
                         key={item.name}
-                        href={item.href}
+                        smooth={true}
                         className={classNames(
                           item.current
-                            ? "text-white"
-                            : "text-gray-300  hover:text-white ",
+                            ? "text-white cursor-pointer"
+                            : "text-gray-300  hover:text-white cursor-pointer",
                           "rounded-md px-3 py-2 text-sm font-normal"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className="flex box mx-3 px-2">
-                <input className="flex-1 text-sm font-normal" type="text" />
-                <img className="flex-none" src={search} alt="" />
               </div>
             </div>
           </div>
