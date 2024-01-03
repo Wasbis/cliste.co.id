@@ -41,7 +41,7 @@ const teamMember = [
     image: imgtester,
   },
   {
-    name: "Dion",
+    name: "Abraham Dionisius A",
     role: "Reliability Engineer - Mech",
     image: dion,
   },
@@ -68,6 +68,11 @@ const teamMember = [
   {
     name: "Muslim Haqqon",
     role: "Mechanical engineer",
+    image: imgtester,
+  },
+  {
+    name: "Panji Ramajaya",
+    role: "Mechanical Engineer",
     image: imgtester,
   },
   {
@@ -110,6 +115,7 @@ const teamMember = [
     role: "UI/UX",
     image: imgtester,
   },
+
   {
     name: "A Kholiq Maulana",
     role: "OB",
